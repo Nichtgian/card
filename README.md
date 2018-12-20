@@ -12,6 +12,8 @@
 ## card types (type):
 A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
 
+![asset french card deck](assets/cards.png)
+
 ### 2:
 always playable, 
 
@@ -61,3 +63,5 @@ play again
 - type
 + getCardImage() : {x, y, cardWidth, cardHeight}
 + playCard(stackCardValue, stackCardCount) : bool
+
+![assets french card back](assets/cardback.png)
