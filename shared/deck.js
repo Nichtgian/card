@@ -2,7 +2,7 @@ class Deck {
   constructor(suits, ranks) {
     this.suits = suits;
     this.ranks = ranks;
-    this.cards = this.setup(ranks, suits);
+    this.cards = this.setup(suits, ranks);
   }
 
 setup(suits, ranks) {

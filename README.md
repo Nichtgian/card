@@ -1,67 +1,32 @@
-# french card deck:
-## categories (category):
-☘ clover/klee
+# card
+Card Images from [here](http://acbl.mybigcommerce.com/52-playing-cards/).
 
-🛡 pike/spitze
+![card deck](assets/doc/deck.png)
 
-❤ heart/herz
+## suits (categories)
+* ♣ club/klee
+* ♦ diamond/karo
+* ♥ heart/herz
+* ♠ spade/pik
 
-⬛ tile/kachel
+## ranks (types/values)
+2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A
 
+## rules
+### 2
+always playable, stack value reset to 2
 
-## card types (type):
-A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
+### 3
+always playable, value of card underneath counts
 
-![asset french card deck](assets/cards.png)
+### 7
+only playable on cards higher or equal 7, next card has to be lower than or 7
 
-### 2:
-always playable, 
-
-stack value 2
-
-### 3:
-always playable,
-
-value of card underneath counts
-
-### 7:
-only playable on cards higher or equal 7,
-
-next card has to be lower than or 7
-
-### 8:
+### 8
 cut out the next player (next 2 if 2x 8, next 3 if 3x 8)
 
-### 10:
-clear stack,
+### 10
+clear stack, play again
 
-play again
-
-### 4 of a kind:
-clear stack, 
-
-play again
-
-
-## classes:
-### player
-- handCards[]
-- tableCards[{
- top: card,
- bottom: card
-}]
-
-### shithead
-- cardWidth
-- cardHeight
-- cardImagePath
-- cardbackImagePath
-+ playCard(stackCardValue, stackCardCount) : bool
-
-### card : shithead
-- category
-- type
-+ getCardImage() : {x, y, cardWidth, cardHeight}
-+ playCard(stackCardValue, stackCardCount) : bool
-
-![assets french card back](assets/cardback.png)
+### 4 cards of a rank:
+clear stack, play again
