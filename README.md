@@ -28,5 +28,5 @@ cut out the next player (next 2 if 2x 8, next 3 if 3x 8)
 ### 10
 clear stack, play again
 
-### 4 cards of a rank:
+### 4 cards of a rank
 clear stack, play again
