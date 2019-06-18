@@ -1,19 +1,7 @@
-class card {
-    constructor(category, cardType) {
-        this.category = category;
-        this.cardType = cardType;
-    }
-
-    static initCards() {
-        let cards = [];
-        for (let i = 0; i < CATEGORIES.length; i++) {
-            cards[i] = [];
-            for (let n = 0; n < CARDTYPES.length; n++) {
-                cards[i][n] = new card(CATEGORIES[i], CARDTYPES[n])
-            }
-        }
-        return cards;
-    }
+class Card {
+  constructor(rank, suit) {
+    this.rank = rank;
+    this.suit = suit;
+    this.imageName = rank.code + suit.code + '.png';
+  }
 }
-
-const CARDS = card.initCards();
