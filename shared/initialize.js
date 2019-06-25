@@ -22,5 +22,3 @@ const RANKS = [
 ];
 
 const DECK = new Deck(SUITS, RANKS);
-
-console.log(DECK);
